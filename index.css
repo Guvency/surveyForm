@@ -19,8 +19,6 @@ h1 + p {
   margin-top: 0;
 }
 
-
-
 form{
   background-color: #78e08f;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
@@ -41,7 +39,9 @@ form{
   margin-top: 10px;
 }
 
-.form-control input, .form-control select {
+.form-control input, 
+.form-control select,
+.form-control textarea{
   border: 1px solid #777; 
   border-radius: 20px;
   padding: 10px;
@@ -50,7 +50,24 @@ form{
   width: 97%;
 }
 
-.form-control input[type="radio"]{
+.form-control select{
+  height: 50px;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"]{
   display: inline-block;
   width: auto;
+}
+
+button{
+  background-color: #c56cf0;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+  font-family: inherit;
+  font-size: 16px;
+  border: 1px solid #c56cf0; 
+  border-radius: 20px;
 }
